@@ -8,7 +8,8 @@ serv_obj = Service("C:\DRIVERS\chromedriver.exe")
 driver = webdriver.Chrome(service=serv_obj)
 url = "https://google.com"
 
-my_wait = WebDriverWait(driver, 10)
+# my_wait = WebDriverWait(driver, 10)
+my_wait = WebDriverWait(driver, 10, ignored_exceptions=Exception)
 
 driver.get(url)
 driver.maximize_window()
