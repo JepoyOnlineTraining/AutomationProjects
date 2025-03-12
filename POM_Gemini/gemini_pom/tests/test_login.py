@@ -12,5 +12,5 @@ def test_login_success(driver):
     login_page.click_login()
     time.sleep(1)
     assert "inventory" in driver.current_url
-    login_page.verify_item(text='Sauce Labs Backpack')
+    login_page.verify_text(text='Sauce Labs Backpack')
 
