@@ -8,3 +8,7 @@ class Common:
     url_create_user = base_url + end_point_create_user
     reqres_base_url = "https://reqres.in/"
     http_bin_base_url = "https://httpbin.org/"
+
+
+    def generate_url(self, endpoint):
+        return self.base_url + endpoint
