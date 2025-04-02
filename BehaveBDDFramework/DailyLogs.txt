@@ -1,0 +1,10 @@
+04/02/2025
+- Implemented "search.feature" step definitions
+- Set pass for each step definitions
+- Set pass to print("Inside Steps")
+- Created "login.feature"
+- Added Scenarios for "login.feature"
+- Create "register.feature"
+- Added Step definition for "register.feature"
+- Completed search feature
+- Started login feature
