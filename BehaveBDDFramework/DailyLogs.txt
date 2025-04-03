@@ -8,3 +8,6 @@
 - Added Step definition for "register.feature"
 - Completed search feature
 - Started login feature
+
+04/03/2025
+- Fix the context issue by restarting and clearing cache
