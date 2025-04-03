@@ -11,3 +11,4 @@
 
 04/03/2025
 - Fix the context issue by restarting and clearing cache
+- Completed "register.feature"
