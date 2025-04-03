@@ -11,6 +11,7 @@ def step_impl(context):
     expected_title = "Account Login"
     time.sleep(5)
     print(f"Actual Title: {context.driver.title}")
+    print(f"Expected Title: {expected_title}")
     assert context.driver.title == expected_title
 
 @when(u'I enter valid email address and valid password into the fields')
