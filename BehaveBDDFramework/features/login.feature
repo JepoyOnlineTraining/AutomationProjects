@@ -1,6 +1,7 @@
 Feature: Login Functionality
 
-  @login
+#  @login
+  @testing
   Scenario: Login with valid credentials
     Given I navigated to Login page
     When I enter valid email address and valid password into the fields
