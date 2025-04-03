@@ -11,9 +11,6 @@ from selenium.webdriver.support import expected_conditions as EC
 
 @given(u'I navigate to Register Page')
 def step_impl(context):
-    options = Options()
-    options.add_experimental_option("detach", True)
-    context.driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
     context.driver.get("https://tutorialsninja.com/demo/")
     WebDriverWait(context.driver, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, "a[title='My Account']"))).click()
     WebDriverWait(context.driver, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, "a[href*='register']"))).click()
@@ -48,7 +45,7 @@ def step_impl(context):
     actual_text = WebDriverWait(context.driver, 10).until(EC.presence_of_element_located((By.ID, "content"))).text
     print(actual_text)
     assert expected_text in actual_text
-    context.driver.quit()
+
 
 @when(u'I enter all fields')
 def step_impl(context):
@@ -100,7 +97,7 @@ def step_impl(context):
     expected_text = "Warning: E-Mail Address is already registered!"
     actual_text = WebDriverWait(context.driver, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, "div.alert"))).text
     assert expected_text in actual_text
-    context.driver.quit()
+
 
 @when(u'I dont enter anything into the fields')
 def step_impl(context):
@@ -125,8 +122,6 @@ def step_impl(context):
     assert get_text(context, (By.CSS_SELECTOR, "input#input-email + div")) == email_error_message
     assert get_text(context, (By.CSS_SELECTOR, "input#input-telephone + div")) == phone_error_message
     assert get_text(context, (By.CSS_SELECTOR, "input#input-password + div")) == password_error_message
-
-    context.driver.quit()
 
 
 def get_text(context, locator):

@@ -5,3 +5,6 @@ How to run all feature files
 
 How to run with tags
     > behave features/search.feature --tags=completed
+
+How to fix before and after scenario hook error
+    > add scenario as 2nd paramenter ex. def before_scenario(context, scenarion):
