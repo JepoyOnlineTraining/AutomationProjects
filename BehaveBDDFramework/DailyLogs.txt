@@ -13,3 +13,9 @@
 - Fix the context issue by restarting and clearing cache
 - Completed "register.feature"
 - Added POM for login.feature
+
+04/04/2025
+- Refactore "register.feature"
+- Added POM for register.feature
+- Refactor "search.feature"
+- Added POM for "search.feature"
