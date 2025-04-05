@@ -4,6 +4,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 from utilities import ConfigReader
+import sys
 
 
 def before_scenario(context, scenario):
@@ -23,3 +24,8 @@ def before_scenario(context, scenario):
 
 def after_scenario(context, scenario):
     context.driver.quit()
+
+def before_all(context):
+    print("Python Sys Path:")
+    for path in sys.path:
+        print(path)

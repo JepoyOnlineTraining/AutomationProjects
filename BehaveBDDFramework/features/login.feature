@@ -8,7 +8,7 @@ Feature: Login Functionality
      And I click on Login button
     Then I should get logged in
 
-  @login
+  @login1
   Scenario: Login with invalid email and valid password
     Given I navigated to Login page
     When I enter invalid email and valid password into the field
