@@ -1,8 +1,8 @@
 import time
 
 from behave import *
-from login_actions import LoginActions
-from homepage_actions import HomePageActions
+from features.actions.login_actions import LoginActions
+from features.actions.homepage_actions import HomePageActions
 
 @given(u'I navigated to Login page')
 def step_impl(context):

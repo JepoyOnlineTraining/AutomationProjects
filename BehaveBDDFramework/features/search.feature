@@ -1,7 +1,7 @@
 
   Feature: Search functionality
 
-    @search
+    @search1
     Scenario: Search for a valid product
       Given I got navigated to Home Page
       When I enter valid product into the Search box field

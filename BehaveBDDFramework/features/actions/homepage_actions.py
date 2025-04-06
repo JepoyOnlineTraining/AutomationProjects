@@ -1,5 +1,5 @@
-from homepage_locatos import HomePageLoc
-from common_actions import CommonActions
+from features.locators.homepage_locatos import HomePageLoc
+from features.locators.common_actions import CommonActions
 
 class HomePageActions:
 

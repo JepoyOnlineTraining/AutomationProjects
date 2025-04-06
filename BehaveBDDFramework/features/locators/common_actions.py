@@ -8,10 +8,13 @@ class CommonActions:
         self.driver = driver
 
     def enter_text(self, locator, text):
-        WebDriverWait(self.driver, 10).until(ec.presence_of_element_located(locator)).send_keys(text)
+        self.locate_element(locator=locator).send_keys(text)
 
     def click_element(self, locator):
-        WebDriverWait(self.driver, 10).until(ec.presence_of_element_located(locator)).click()
+        self.locate_element(locator=locator).click()
 
     def get_element_text(self, locator):
-        return WebDriverWait(self.driver, 10).until(ec.presence_of_element_located(locator)).text
+        return self.locate_element(locator=locator).text
+
+    def locate_element(self, locator):
+        return WebDriverWait(self.driver, 50).until(ec.presence_of_element_located(locator=locator))

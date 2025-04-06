@@ -1,5 +1,5 @@
-from common_actions import CommonActions
-from search_locators import SearchLocators
+from features.locators.common_actions import CommonActions
+from features.locators.search_locators import SearchLocators
 
 class SearchActions:
 

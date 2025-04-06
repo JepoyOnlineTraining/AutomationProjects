@@ -1,7 +1,7 @@
 
-from login_locators import LoginLoc
-from common_actions import CommonActions
-from homepage_locatos import HomePageLoc
+from features.locators.login_locators import LoginLoc
+from features.locators.common_actions import CommonActions
+from features.locators.homepage_locatos import HomePageLoc
 
 class LoginActions:
 

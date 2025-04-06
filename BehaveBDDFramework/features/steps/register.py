@@ -1,11 +1,7 @@
 from behave import *
 import datetime
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from homepage_actions import HomePageActions
-from login_actions import LoginActions
+from features.actions.homepage_actions import HomePageActions
+from features.actions.login_actions import LoginActions
 
 
 @given(u'I navigate to Register Page')

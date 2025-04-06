@@ -1,6 +1,5 @@
 from behave import *
-from selenium.webdriver.common.by import By
-from search_actions import SearchActions
+from features.actions.search_actions import SearchActions
 
 @given(u'I got navigated to Home Page')
 def step_impl(context):
