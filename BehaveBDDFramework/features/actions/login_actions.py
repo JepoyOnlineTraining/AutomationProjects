@@ -1,6 +1,6 @@
 
 from features.locators.login_locators import LoginLoc
-from features.locators.common_actions import CommonActions
+from features.actions.common_actions import CommonActions
 from features.locators.homepage_locatos import HomePageLoc
 
 class LoginActions:
@@ -14,7 +14,7 @@ class LoginActions:
         self.common_act.enter_text(locator=LoginLoc.password_field, text=password)
 
     def verify_my_account(self, text):
-        self.common_act.verify_text(locator=HomePageLoc.error_message, actual_text=text)
+        self.common_act.verify_text(locator=HomePageLoc.home_page_content, expected_text=text)
 
 
     def click_login_btn(self):

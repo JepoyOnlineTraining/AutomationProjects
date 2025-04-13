@@ -3,7 +3,7 @@ import time
 from behave import *
 from features.actions.login_actions import LoginActions
 from features.actions.homepage_actions import HomePageActions
-from features.locators.common_actions import CommonActions
+from features.actions.common_actions import CommonActions
 
 
 @given(u'I navigated to Login page')
@@ -24,7 +24,7 @@ def step_impl(context):
 
 @then(u'I should get logged in')
 def step_impl(context):
-    expected_text = "My Account"
+    expected_text = "My Account1"
     context.login_act.verify_my_account(text=expected_text)
 
 

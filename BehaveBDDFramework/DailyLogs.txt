@@ -24,3 +24,6 @@
 - Fix issue in importing
 - Start with fixture folder if need to import module
 - Refactor search and register tomorrow
+
+04/07/2025
+- Refactored search files

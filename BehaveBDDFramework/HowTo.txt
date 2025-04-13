@@ -8,3 +8,6 @@ How to run with tags
 
 How to fix before and after scenario hook error
     > add scenario as 2nd paramenter ex. def before_scenario(context, scenarion):
+
+How to run and print logs in behave
+    > behave features/search.feature --tags=completed --no-capture
