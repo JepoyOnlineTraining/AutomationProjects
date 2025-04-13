@@ -11,3 +11,8 @@ How to fix before and after scenario hook error
 
 How to run and print logs in behave
     > behave features/search.feature --tags=completed --no-capture
+
+How to setup allure in behave
+    > pip install allure-behave
+    > behave -f allure_behave.formatter:AllureFormatter -o %allure_result_folder% ./features
+    > allure serve %allure_result_folder% (generate report)

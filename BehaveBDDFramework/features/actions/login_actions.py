@@ -14,7 +14,7 @@ class LoginActions:
         self.common_act.enter_text(locator=LoginLoc.password_field, text=password)
 
     def verify_my_account(self, text):
-        self.common_act.verify_text(locator=HomePageLoc.home_page_content, expected_text=text)
+        self.common_act.verify_text(locator=HomePageLoc.error_message, expected_text=text)
 
 
     def click_login_btn(self):
@@ -38,7 +38,7 @@ class LoginActions:
         self.common_act.click_element(locator=LoginLoc.continue_button)
 
     def verify_account_creation(self, text):
-        self.common_act.verify_text(locator=HomePageLoc.home_page_content, actual_text=text)
+        self.common_act.verify_text(locator=HomePageLoc.home_page_content, expected_text=text)
 
     def verify_duplicate_account_message(self, text):
         self.common_act.verify_text(locator=HomePageLoc.error_message, actual_text=text)

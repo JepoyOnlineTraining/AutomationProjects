@@ -24,8 +24,8 @@ def step_impl(context):
 
 @then(u'I should get logged in')
 def step_impl(context):
-    expected_text = "My Account1"
-    context.login_act.verify_my_account(text=expected_text)
+    expected_text = "My Account"
+    context.login_act.verify_account_creation(text=expected_text)
 
 
 @when(u'I enter invalid email and valid password into the field')
