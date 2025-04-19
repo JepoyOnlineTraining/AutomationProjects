@@ -25,7 +25,7 @@ def before_scenario(context, scenario):
 def after_scenario(context, scenario):
     context.driver.quit()
 
-def before_all(context):
-    print("Python Sys Path:")
-    for path in sys.path:
-        print(path)
+# def before_all(context):
+#     print("Python Sys Path:")
+#     for path in sys.path:
+#         print(path)
