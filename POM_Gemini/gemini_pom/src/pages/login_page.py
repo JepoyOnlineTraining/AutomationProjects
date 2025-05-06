@@ -1,4 +1,3 @@
-from selenium.webdriver.common.by import By
 from ..pages.base_page import BasePage
 from ..pages_locators.login_page import LoginPageLocators
 
@@ -17,9 +16,4 @@ class LoginPage(BasePage):
     def click_login(self):
         self.click(LoginPageLocators.login_button)
 
-    def verify_text(self, text):
-        actual_text = self.extract_text(LoginPageLocators.items)
-        print(f"Actual Text: {actual_text}")
-        print(f"Expected Text: {text}")
-        assert text in actual_text
 
